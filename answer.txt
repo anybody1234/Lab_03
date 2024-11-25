@@ -1,0 +1,1 @@
+Điều đó là hoàn toàn có thể, Java cho phép bạn tạo nhiều constructor cho cùng một class miễn là mỗi constructor có một danh sách tham số độc nhất. Tính năng này được gọi là nạp chồng constructor. 
