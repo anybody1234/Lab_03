@@ -30,9 +30,9 @@ public class Cart {
     //public void addDigitalVideoDisc(DigitalVideoDisc... dvds) {
     //    for (DigitalVideoDisc disc : dvds) {
     //      
-	//		itemsOrdered.add(dvd);
+	//		itemsOrdered.add(disc);
 	//		qtyOrdered++;
-	//		System.out.println("The disc \"" + dvd.getTitle() + "\" has been added.");
+	//		System.out.println("The disc \"" + disc.getTitle() + "\" has been added.");
 	//	} else {
 	//		System.out.println("The order is almost full. Cannot add more DVDs.");
 	//	}
