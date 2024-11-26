@@ -18,9 +18,9 @@ public class Cart {
 	public void addDigitalVideoDisc(DigitalVideoDisc[] dvdList) {
         for (DigitalVideoDisc disc : dvdList) {
 			if (qtyOrdered < MAX_NUMBERS_ORDERED) {
-				itemsOrdered.add(dvd);
+				itemsOrdered.add(disc);
 				qtyOrdered++;
-				System.out.println("The disc \"" + dvd.getTitle() + "\" has been added.");
+				System.out.println("The disc \"" + disc.getTitle() + "\" has been added.");
 			} else {
 				System.out.println("The order is almost full. Cannot add more DVDs.");
 			}
@@ -58,6 +58,18 @@ public class Cart {
 		} else {
 			System.out.println("Not found " + dvd.getTitle());
 		}
+	}
+	public void print() {
+		System.out.println("***********************CART***********************");
+		System.out.println("Ordered Items:");
+		float totalCost = 0;
+		for (int i = 0; i < itemsOrdered.size(); i++) {
+			DigitalVideoDisc dvd = itemsOrdered.get(i);
+			System.out.println((i + 1) + ". " + dvd.toString());
+			totalCost += dvd.getCost();
+		}
+		System.out.println("Total cost: " + totalCost + " $");
+		System.out.println("***************************************************");
 	}
 
 }

@@ -35,7 +35,13 @@ public class DigitalVideoDisc {
 		this.category = category;
 		this.cost = cost;
 	}
-
+	public DigitalVideoDisc(String title, String category, String director, int length, float cost) {
+		this.title = title;
+		this.category = category;
+		this.cost = cost;
+		this.director = director;
+		this.length = length;
+	}
 	public DigitalVideoDisc(String title, String category, String director, int length, float cost, int nbDigitalVideoDics) {
 		this.title = title;
 		this.category = category;
@@ -64,5 +70,11 @@ public class DigitalVideoDisc {
     }
     public static int getNbDigitalVideoDiscs() {
         return nbDigitalVideoDiscs;
+    }
+	public String toString() {
+        return "DVD - " + title + " - " + category + " - " + director + " - " + length + " mins: " + cost + " $";
+    }
+    public boolean isMatch(String searchTitle) {
+        return this.title.equalsIgnoreCase(searchTitle); 
     }
 }
