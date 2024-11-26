@@ -59,17 +59,5 @@ public class Cart {
 			System.out.println("Not found " + dvd.getTitle());
 		}
 	}
-	public void print() {
-		System.out.println("***********************CART***********************");
-		System.out.println("Ordered Items:");
-		float totalCost = 0;
-		for (int i = 0; i < itemsOrdered.size(); i++) {
-			DigitalVideoDisc dvd = itemsOrdered.get(i);
-			System.out.println((i + 1) + ". " + dvd.toString());
-			totalCost += dvd.getCost();
-		}
-		System.out.println("Total cost: " + totalCost + " $");
-		System.out.println("***************************************************");
-	}
 
 }
