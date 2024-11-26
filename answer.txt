@@ -1,1 +1,1 @@
-Điều đó là hoàn toàn có thể, Java cho phép bạn tạo nhiều constructor cho cùng một class miễn là mỗi constructor có một danh sách tham số độc nhất. Tính năng này được gọi là nạp chồng constructor. 
+ Java khi truyền tham số kiểu đối tượng, giá trị là tham chiếu đến đối tượng, nhưng không phải là "pass by reference" thực sự, vì bản thân tham chiếu (địa chỉ) vẫn được sao chép vào phương thức.
